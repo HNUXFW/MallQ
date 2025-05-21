@@ -5,9 +5,9 @@ import lombok.Data;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-@Data
-@Entity
-@Table(name = "orders")
+@Data//Lombok自动生成getter和setter方法
+@Entity//JPA对象映射为数据库表
+@Table(name = "orders")//JPA注解，指示对应的数据库表名称
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
