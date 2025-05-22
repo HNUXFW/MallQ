@@ -9,7 +9,7 @@
 - H2数据库
 - Spring Data JPA
 - Lombok
-- Docker (用于运行RabbitMQ)
+
 
 ## 系统架构
 
@@ -22,14 +22,8 @@
 ## 快速开始
 
 1. 启动RabbitMQ
-```bash
-docker-compose up -d
-```
 
 2. 运行Spring Boot应用
-```bash
-./mvnw spring-boot:run
-```
 
 3. 访问服务
 - H2数据库控制台: http://localhost:8080/h2-console
@@ -41,8 +35,10 @@ src/main/java/com/example/mallq/
 ├── MallQApplication.java
 ├── config/
 │   └── RabbitMQConfig.java
+|   └── OpenAPIConfig.java    
 ├── entity/
 │   └── Order.java
+│   └── Product.java
 ├── service/
 ├── controller/
 └── repository/
