@@ -21,6 +21,9 @@ public class OrderService {
     private final OrderRepository orderRepository;
     private final ProductRepository productRepository;
     private final RabbitTemplate rabbitTemplate;
+//OrderRepository 是 Spring Data JPA 自动生成并注册的 Bean。
+//RabbitTemplate 是 Spring Boot 自动配置的 Bean。
+//@RequiredArgsConstructor 让 Spring 可以通过构造函数注入这些 Bean。
 
     @Transactional
     public Order createOrder(Long userId, Long productId, Integer quantity) {
