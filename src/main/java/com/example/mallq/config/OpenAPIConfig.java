@@ -18,6 +18,6 @@ public class OpenAPIConfig {
                         .version("1.0")
                         .contact(new Contact()
                                 .name("MallQ Team")
-                                .email("support@mallq.com")));
+                                ));
     }
 } 
